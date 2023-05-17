@@ -1,5 +1,5 @@
 print("Television")
-int(input("Choose 0-1: "))
+TVToggle = int(input("Choose 0-1: "))
 # create class named TV
 class TV:
 

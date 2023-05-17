@@ -5,10 +5,9 @@ class TV:
 
 # current channel (1 to 120)
 # current volume level (1 to 7)
-    def __init__(self, channel = [1, 120], volume = [1, 7], tvOn = 1):
+    def __init__(self, channel = [1, 120], volume = [1, 7]):
         self.channel = channel
         self.volume = volume
-        self.tvOn = tvOn
 
     # create two Class TV objects
     # construct a default TV object

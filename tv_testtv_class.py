@@ -19,11 +19,15 @@ elif TVToggle == "1":
             print(self.volume)
 
         # create TestDriver program TestTV
-        # returns channel
+        # returns channel, volume
         def getChannel(self):
             return f"Channel: {self.channel}\nVolume: {self.volume}"
         
+        def getChannel(self):
+            return self.channel
+        
         # set new channel
+
         # gets volume level
         # set new volume level
         # increases channel number by 1

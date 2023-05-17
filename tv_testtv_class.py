@@ -14,10 +14,6 @@ elif TVToggle == "1":
 
         # create two Class TV objects
         # construct a default TV object
-        def __str__(self):
-            print(self.channel)
-            print(self.volume)
-
         # create TestDriver program TestTV
         # returns channel, volume
         def getChannel(self):
@@ -59,7 +55,8 @@ elif TVToggle == "1":
         def decreaseVolume(self):
             if self.volume > 1:
                 self.volume -= 1
-        # print output
 
 else:
     print("LOL")
+
+# print output

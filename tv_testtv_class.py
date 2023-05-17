@@ -11,16 +11,17 @@ elif TVToggle == "1":
         def __init__(self, channel = 1, volume = 1):
             self.channel = channel
             self.volume = volume
-        
+
+        # create two Class TV objects
+        # construct a default TV object
         def __str__(self):
             print(self.channel)
             print(self.volume)
 
         def getChannel(self):
-            return channel
+            return f"Channel: {self.channel}\nVolume: {self.volume}"
         
-        # create two Class TV objects
-        # construct a default TV object
+
         # create TestDriver program TestTV
         # returns channel
         # set new channel

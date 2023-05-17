@@ -1,6 +1,12 @@
 # create class named TV
+class TV:
+
 # current channel (1 to 120)
 # current volume level (1 to 7)
+    def __init__(self, channel = [1, 120], volume = [1, ]):
+        self.channel = channel
+        self.volume = volume
+
 # indicate if on/off
 # create TestDriver program TestTV
 # create two Class TV objects

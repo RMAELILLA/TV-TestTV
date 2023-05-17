@@ -39,9 +39,17 @@ elif TVToggle == "1":
         def setVolume(self, volume):
             if 1 <= volume <= 7:
                 self.volume = volume
-                
+
         # increases channel number by 1
+        def increaseChannel(self):
+            if self.channel < 120:
+                self.channel += 1
+
         # decreases channel number by 1
+        def decreaseChannel(self):
+            if self.channel > 1:
+                self.channel -= 1
+                
         # increases channel number by 1
         # decreases channel number by 1
         # print output

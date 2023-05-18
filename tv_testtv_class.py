@@ -62,28 +62,30 @@ elif TVToggle == "1":
     while True:
         print(TestTV) # print output
         
-        tvTestTV = int(input(\
-        """
-        What do you wish to change? or do you want to exit?
+        try:
+            tvTestTV = int(input(\
+            """
+            What do you wish to change? or do you want to exit?
 
-        0 - Exit
-        1 - Change Channel
-        2 - Change Volume
+            0 - Exit
+            1 - Change Channel
+            2 - Change Volume
 
-        Your choice: 
-        """))
-        
-        if tvTestTV == 0:
-            print("The television is now off.")
-            break
-        elif tvTestTV == 1:
-            channelNew = int(input("What channel number you want? : "))
-            TestTV.setChannel(channelNew)
-        elif tvTestTV == 2:
-            volumeNew = int(input("What volume number you want range from 1-7? : "))
-            TestTV.setVolume(volumeNew)
-        else:
-            print("cannot process your input choose only on 0-2. Try again")
+            Your choice: 
+            """))
+            if tvTestTV == 0:
+                print("The television is now off.")
+                break
+            elif tvTestTV == 1:
+                channelNew = int(input("What channel number you want? : "))
+                TestTV.setChannel(channelNew)
+            elif tvTestTV == 2:
+                volumeNew = int(input("What volume number you want range from 1-7? : "))
+                TestTV.setVolume(volumeNew)
+            else:
+                print("cannot process your input choose only on 0-2. Try again")
+        except ValueError:
+            print("Try again, choose only from 0-2")
 
 else:
     print("LOL")

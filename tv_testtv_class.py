@@ -20,7 +20,8 @@ print("TELEVISION")
 # indicate if on/off
 TVToggle = input("Choose 0-1: ")
 if TVToggle == "0":
-    print("The Television is off.")
+    TVoff = " The Television is off "
+    print(TVoff.center(150, "#"))
 elif TVToggle == "1":
     # create class named TV
     class TV:
@@ -124,4 +125,4 @@ elif TVToggle == "1":
             print("Try again, choose only from 0-2")
 
 else:
-    print("LOL")
+    print("Sorry, try again.")

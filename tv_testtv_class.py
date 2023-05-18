@@ -60,7 +60,7 @@ elif TVToggle == "1":
     # create TestDriver program TestTV
     while True:
         print(TestTV)
-
+        
         tvTestTV = int(input(\
         """
         What do you wish to change? or do you want to exit?
@@ -69,9 +69,11 @@ elif TVToggle == "1":
         1 - Change Channel
         2 - Change Volume
 
-        Your choice: """))
-
+        Your choice: 
+        """))
+        
         if tvTestTV == 0:
+            print("The television is now off.")
             break
         elif tvTestTV == 1:
             channelNew = int(input("What channel number you want? : "))
@@ -80,7 +82,7 @@ elif TVToggle == "1":
             volumeNew = int(input("What volume number you want range from 1-7? : "))
             TestTV.setVolume(volumeNew)
         else:
-            print("cannot process your input choose only on 0-3. Try again")
+            print("cannot process your input choose only on 0-2. Try again")
 
 else:
     print("LOL")

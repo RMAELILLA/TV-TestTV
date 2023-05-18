@@ -61,7 +61,7 @@ elif TVToggle == "1":
     while True:
         print(TestTV)
 
-        input(\
+        tvTestTV = input(\
         """
         What do you wish to change? or do you want to exit?
 
@@ -70,6 +70,9 @@ elif TVToggle == "1":
         2 - Raise Volume
         3 - Lower Volume
         """)
+
+        if tvTestTV == 0:
+            int(input("What channel number you want? : "))
 
 else:
     print("LOL")

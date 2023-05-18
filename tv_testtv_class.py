@@ -35,26 +35,27 @@ elif TVToggle == "1":
                 self.volume = volume
 
         # increases channel number by 1
-        def increaseChannel(self):
+        def channelUp(self):
             if self.channel < 120:
                 self.channel += 1
 
         # decreases channel number by 1
-        def decreaseChannel(self):
+        def channelDown(self):
             if self.channel > 1:
                 self.channel -= 1
 
         # increases volume number by 1
-        def increaseVolume(self):
+        def volumeUp(self):
             if self.volume < 120:
                 self.volume += 1
 
         # decreases volume number by 1
-        def decreaseVolume(self):
+        def volumeDown(self):
             if self.volume > 1:
                 self.volume -= 1
-                
+
     # construct a default TV object
+    TestTV = TV()
     # create TestDriver program TestTV
 
 else:

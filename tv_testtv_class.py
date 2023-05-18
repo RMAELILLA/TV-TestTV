@@ -14,7 +14,7 @@ elif TVToggle == "1":
 
         # create two Class TV objects
         # returns channel, volume
-        def getChannel(self):
+        def __str__(self):
             return f"Channel: {self.channel}\nVolume: {self.volume}"
         
         def getChannel(self):
@@ -61,7 +61,7 @@ elif TVToggle == "1":
     while True:
         print(TestTV)
 
-        tvTestTV = input(\
+        tvTestTV = int(input(\
         """
         What do you wish to change? or do you want to exit?
 
@@ -69,8 +69,8 @@ elif TVToggle == "1":
         1 - Change Channel
         2 - Raise Volume
         3 - Lower Volume
-        """)
-        
+        """))
+
         if tvTestTV == 0:
             break
         elif tvTestTV == 1:
@@ -81,6 +81,7 @@ elif TVToggle == "1":
             TestTV.setVolume(volumeNew)
         else:
             print("cannot process your input choose only on 0-3. Try again")
+
 else:
     print("LOL")
 

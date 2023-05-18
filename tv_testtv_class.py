@@ -70,10 +70,17 @@ elif TVToggle == "1":
         2 - Raise Volume
         3 - Lower Volume
         """)
-
+        
         if tvTestTV == 0:
-            int(input("What channel number you want? : "))
-
+            break
+        elif tvTestTV == 1:
+            channelNew = int(input("What channel number you want? : "))
+            TestTV.setChannel(channelNew)
+        elif tvTestTV == 2:
+            volumeNew = int(input("What volume number you want range from 1-7? : "))
+            TestTV.setVolume(volumeNew)
+        else:
+            print("cannot process your input choose only on 0-3. Try again")
 else:
     print("LOL")
 

@@ -67,9 +67,9 @@ elif TVToggle == "1":
 
         0 - Exit
         1 - Change Channel
-        2 - Raise Volume
-        3 - Lower Volume
-        """))
+        2 - Change Volume
+
+        Your choice: """))
 
         if tvTestTV == 0:
             break

@@ -1,4 +1,5 @@
-print("Television")
+TV = "Television"
+print(TV)
 # indicate if on/off
 TVToggle = input("Choose 0-1: ")
 if TVToggle == "0":
@@ -59,7 +60,7 @@ elif TVToggle == "1":
 
     # create TestDriver program TestTV
     while True:
-        print(TestTV)
+        print(TestTV) # print output
         
         tvTestTV = int(input(\
         """
@@ -86,5 +87,3 @@ elif TVToggle == "1":
 
 else:
     print("LOL")
-
-# print output

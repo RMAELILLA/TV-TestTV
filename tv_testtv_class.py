@@ -56,7 +56,20 @@ elif TVToggle == "1":
 
     # construct a default TV object
     TestTV = TV()
+
     # create TestDriver program TestTV
+    while True:
+        print(TestTV)
+
+        input(\
+        """
+        What do you wish to change? or do you want to exit?
+
+        0 - Exit
+        1 - Change Channel
+        2 - Raise Volume
+        3 - Lower Volume
+        """)
 
 else:
     print("LOL")

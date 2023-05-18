@@ -1,5 +1,22 @@
-TV = "Television"
-print(TV)
+print(\
+    """
+         O         O
+          \\     // 
+           \\   //
+            \\ // 
+           /~~~~~\
+           
+    ,-------------------,
+    | ,---------------, |
+    | |               | |
+    | |               | |
+    | |               | |
+    | |               | |
+    | |_______________| |
+    |___________________|
+    |___________________|
+    """)
+print("TELEVISION")
 # indicate if on/off
 TVToggle = input("Choose 0-1: ")
 if TVToggle == "0":
@@ -60,6 +77,25 @@ elif TVToggle == "1":
 
     # create TestDriver program TestTV
     while True:
+        print(\
+        """
+             O         O
+              \\     // 
+               \\   //
+                \\ // 
+               /~~~~~\
+           
+        ,-------------------,
+        | ,---------------, |
+        | |               | |
+        | |               | |
+        | |               | |
+        | |               | |
+        | |_______________| |
+        |___________________|
+        |___________________|
+        """)
+        print("TELEVISION")
         print(TestTV) # print output
         
         try:
